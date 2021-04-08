@@ -25,7 +25,7 @@ def send_email(u1):
     if(driver.current_url == u1):
         print('The email was not novel, enter a novel one')
         driver.find_element_by_id('email_create').clear()
-        send_email()
+        send_email(u1)
     else:
         print('Novel email Found!')
     return email
